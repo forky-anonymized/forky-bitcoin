@@ -64,5 +64,7 @@ So we do not recommend you to do this task in general.
     sudo ./stopFuzzing
 
 ## (Warning) Remove All data
+This operation will remove all data that generated during fuzzing.
+All corpus, test cases, log, and others will be removed.
     chmod +x clearAll.sh
     sudo ./clearAll.sh

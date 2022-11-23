@@ -3,6 +3,7 @@ LABEL email="forky.blockchain.anonymized.for.submission@gmail.com" description="
 COPY block.cpp /code/block.cpp
 COPY Makefile.test.include /code/Makefile.test.include 
 COPY configure.ac /code/configure.ac
+COPY configure /code/configure
 COPY coins.h /code/coins.h
 COPY chain.h /code/chain.h
 COPY txmempool.h /code/txmempool.h
@@ -29,11 +30,13 @@ RUN apt-get update \
  && mv /bitcoin/src/validation.cpp /bitcoin/src/validation.cpp.old \
  && mv /bitcoin/src/validation.h /bitcoin/src/validation.h.old \
  && mv /bitcoin/configure.ac /bitcoin/configure.ac.old \
+ && mv /bitcoin/configure /bitcoin/configure.old \
  && mv /bitcoin/src/Makefile.test.include /bitcoin/src/Makefile.test.include.old \
  && mv /bitcoin/src/validationinterface.cpp /bitcoin/src/validationinterface.cpp.old \
  && mv /bitcoin/src/utiltime.cpp /bitcoin/src/utiltime.cpp.old \
  && cp /code/block.cpp /bitcoin/src/test/fuzz/block.cpp \
  && cp /code/configure.ac /bitcoin/configure.ac \
+ && cp /code/configure /bitcoin/configure \
  && cp /code/Makefile.test.include /bitcoin/src/Makefile.test.include \
  && cp /code/FuzzedDataProvider.h /bitcoin/src/test/fuzz/FuzzedDataProvider.h \
  && cp /code/Parser.h /bitcoin/src/test/fuzz/Parser.h \

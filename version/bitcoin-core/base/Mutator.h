@@ -572,11 +572,7 @@ CBlock generate_invalid_block(CBlock& prevBlock, int height, std::vector<std::pa
     // Anonymized_Author_B: X~N(0, 4447.8067), P(X<3000) = 0.75
     // Therefore, the number of tx in a block is < 3000 by 50% chance
     // std::normal_distribution<double> norm(0, 4447);
-<<<<<<< HEAD
     // Anonymized_Author_B: number of transactions inside the block, might change
-=======
-    // Anonymized_Author_B: number of transactions inside the block, might change
->>>>>>> fb1b00a297ffc3f53eb44f2867b87398db68aa94
     int txn_count = MAX_TXN_COUNT;
 
     std::vector<double> vProb{0.1, 0.9};
@@ -764,24 +760,10 @@ void ShuffleOrder(TestCaseType& TestCase)
 
     std::cout << "\tShuffle submission order\n";
     int parent = common_parents[(*gRnd)() % common_parents.size()];
-<<<<<<< HEAD
-=======
-    std::cout << "BEFORE\n";
-    PrintTestCase(TestCase);
-
-    std::cout << "\tParent index: " << parent << std::endl;
->>>>>>> fb1b00a297ffc3f53eb44f2867b87398db68aa94
 
     std::vector <int> childs;
     for (int i = 0; i < nBlocks; i++)
         if (TestCase[i].prev == parent) childs.push_back(i);
-<<<<<<< HEAD
-=======
-    std::cout << "\tChilds " << childs.size() << " : ";
-    for (auto i : childs)
-        std::cout << i << ", ";
-    std::cout << "\n";
->>>>>>> fb1b00a297ffc3f53eb44f2867b87398db68aa94
 
     assert (childs.size() > 1);
     int nf = (*gRnd)() % childs.size();
@@ -841,11 +823,6 @@ void ShuffleOrder(TestCaseType& TestCase)
         newTestCase.push_back(TestCase[i]);
 
     TestCase = newTestCase;
-<<<<<<< HEAD
-=======
-    std::cout << "AFTER\n";
-    PrintTestCase(TestCase);
->>>>>>> fb1b00a297ffc3f53eb44f2867b87398db68aa94
 }
 
 template <typename... Callables>

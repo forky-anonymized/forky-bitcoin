@@ -9,5 +9,5 @@ cd /bitcoin
 # cp /bitcoin/import/import.dat.old /bitcoin/import/import.dat
 # mkdir /bitcoin/test_cases/22.0.0
 echo "start fuzzing"
-FUZZ=block src/test/fuzz/fuzz fuzzing_corpus/ -max_len=4000000 -rss_limit_mb=0 -runs=1000
+FUZZ=block src/test/fuzz/fuzz fuzzing_corpus/ -max_len=4000000 -rss_limit_mb=0 -runs=100
 #FUZZ=block src/test/fuzz/fuzz fuzzing_corpus

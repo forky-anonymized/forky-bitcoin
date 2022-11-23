@@ -10,7 +10,7 @@ fi
 PACKAGE_VERSION=("bitcoin/23.0.0" "bitcoin/22.0.0" "bitcoin/0.21.2" "bitcoin/0.21.1" "bitcoin/0.21.0" 
 "bitcoin/0.20.1" "bitcoin/0.20.0" "bitcoin/0.19.1" "bitcoin/0.19.0.1" "bitcoin/0.19.0" "bitcoin/0.18.1" 
 "bitcoin/0.18.0" "bitcoin/0.17.1" "bitcoin/0.17.0.1" "bitcoin/0.17.0" "bitcoin/0.16.3" "bitcoin/0.16.2" 
-"bitcoin/0.16.1" "bitcoin/0.16.2" "bitcoin/0.15.2" "bitcoin/0.15.1" "bitcoin/0.15.0" 
+"bitcoin/0.16.1" "bitcoin/0.16.0" "bitcoin/0.15.2" "bitcoin/0.15.1" "bitcoin/0.15.0" 
 "knots/23.0.0" "knots/22.0.0" 
 "bcoin/2.2.0" "bcoin/2.1.0" "bcoin/2.0.0" 
 "btcd/0.23.1" "btcd/0.23.0" "btcd/0.22.1")

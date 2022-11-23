@@ -17,7 +17,7 @@ echo "############################"
 echo 'Build bitcoin v22.0 image'
 echo "############################" 
 echo
-docker build -t ubuntu-bitcoin:v22.0 ../version/bitcoin-core/v22.0
+docker build -t ubuntu-bitcoin:v22.0 ./version/bitcoin-core/v22.0
 
 echo
 echo "############################" 

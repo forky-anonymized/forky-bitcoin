@@ -479,7 +479,7 @@ void test_one_input(const std::vector<uint8_t> buffer)
     hashResultFile.resize (CSHA1::OUTPUT_SIZE);
     CSHA1().Write ((const unsigned char*)(packed.data()), packed.size()).Finalize(hashResultFile.data());
 
-    fs::path pathResult = fs::current_path() / "results" / PACKAGE_VERSION / (HexStr(hashTestCase) + "_" + HexStr(hashResultFile));
+    fs::path pathResult = fs::current_path() / "results" / "0.17.0.1" / (HexStr(hashTestCase) + "_" + HexStr(hashResultFile));
     fs::ofstream fileResult(pathResult, std::ios_base::out);
     fileResult << std::setw(4) << result;
     fileResult.close();

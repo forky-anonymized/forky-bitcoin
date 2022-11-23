@@ -58,3 +58,11 @@ So we do not recommend you to do this task in general.
     ## How to use
     ## sudo ./startFuzzing [start round#] [end round#]
     sudo ./startFuzzing.sh 0 10
+
+## Stop fuzzing
+    chmod +x stopFuzzing.sh
+    sudo ./stopFuzzing
+
+## (Warning) Remove All data
+    chmod +x clearAll.sh
+    sudo ./clearAll.sh
